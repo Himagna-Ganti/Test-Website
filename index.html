@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<body style="text-align:center;">
+
+<h2>This is a sample website</h2>
+
+<p>Move the mouse over the text below:</p>
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Whatever content that is uploaded, can be displayed over here. This is a simple sample that has been written purely in html.</span>
+</div>
+
+<p>Tis is a normal website that has been hosted on GitHub.</p>
+<p>Here is a random image</p>
+<img src="images/download.png" alt="Random Image" width="460" height="345"/>
+
+
+</body>
+</html>
+
+
